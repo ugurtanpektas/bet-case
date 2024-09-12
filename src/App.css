@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+tr.first-line td {
+    max-height: 10px;
+    font-weight: 500;
+    padding: 4px;
+}
+
+th.ln,
+td.ln {
+    text-align: left;
+    padding-left: 8px !important;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+td.pointer {
+    cursor: pointer;
+}
+
+td.yellow {
+    background-color: yellow;
+}
+
+.cart {
+    min-width: 450px;
+    position: fixed;
+    z-index: 2;
+    background-color: #FFF;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    padding: 10px;
+    box-shadow: -5px -1px 30px #ccc;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart ul li {
+    margin-bottom: 10px;
+}
+
+.cart ul li span {
+    margin-right: 10px;
+}
