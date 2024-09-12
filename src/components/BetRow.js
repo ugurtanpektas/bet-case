@@ -19,7 +19,7 @@ const BetRow = memo(({ bet }) => {
         <>
             <div className="first-line grid-row">
                 <div className="ln">{bet.D} {bet.DAY} {bet.LN}</div>
-                <div>Yorumlar</div>
+                <div className='cm'>Yorumlar</div>
                 <div>MBS</div>
                 <div>1</div>
                 <div>x</div>
@@ -40,7 +40,7 @@ const BetRow = memo(({ bet }) => {
             </div>
             <div className='grid-row'>
                 <div className="ln"><b>{bet.C}</b> {bet.T} {bet.N}</div>
-                <div></div>
+                <div className='cm'></div>
                 <div>{bet.OCG[1]?.MBS}</div>
                 <div
                     className={`pointer ${checkBetOdd(bet.NID, '1') ? 'yellow' : ''}`}

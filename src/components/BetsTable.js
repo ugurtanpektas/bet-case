@@ -11,10 +11,10 @@ function BetsTable({ bets }) {
     );
 
     return (
-        <div>
+        <div className='grid-wrapper'>
             <div className="header grid-row">
                 <div className="ln">Events: {bets.length}</div>
-                <div>Yorumlar</div>
+                <div className='cm'>Yorumlar</div>
                 <div>MBS</div>
                 <div>1</div>
                 <div>x</div>

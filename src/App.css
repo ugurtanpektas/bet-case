@@ -29,6 +29,12 @@ body {
     margin-right: 10px;
 }
 
+.grid-wrapper {
+    min-width: 1336px;
+    width: 100%;
+    overflow: auto;
+}
+
 .table-container {
     display: grid;
     grid-template-columns: repeat(19, 1fr);
@@ -76,7 +82,14 @@ body {
 
 .grid-row div.ln {
     text-align: left;
-    width: 30%;
+    width: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.grid-row div.cm {
+    width: 10%;
+    min-width: 100px;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -91,4 +104,10 @@ body {
 
 .pointer {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1336px) {
+    .grid-row div {
+        font-size: 14px;
+    }
 }
