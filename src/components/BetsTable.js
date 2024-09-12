@@ -34,7 +34,7 @@ function BetsTable({ bets }) {
                 <div>+99</div>
             </div>
             <List
-                height={window.innerHeight - 60} // Set height according to your design
+                height={window.innerHeight - 60}
                 itemCount={bets.length}
                 itemSize={71}
                 width="100%"
